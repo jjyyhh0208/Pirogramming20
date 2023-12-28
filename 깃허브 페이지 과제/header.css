@@ -1,0 +1,50 @@
+#github {
+    width: 40px;
+    height: 40px;
+    margin-right: 1.8rem;
+    background-color: white;
+}
+#container {
+    height: 100vh;
+    background-color: rgb(0, 3, 51);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    color: white;
+}
+header > h1 {
+    font-size: 0;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+#right-list {
+    display: flex;
+    gap: 1rem;
+    margin-right: 100px;
+    list-style: none;
+}
+.arrow {
+    width: 15px;
+    height: 10px;
+}
+
+#header-search-box {
+    background-color: gray;
+    border-radius: 6px;
+    height: 1.5rem;
+}
+input::placeholder {
+    color: white;
+}
+#header-signup {
+    outline: 1px solid white;
+    outline-offset: 0.3rem;
+    border-radius: 6px;
+}

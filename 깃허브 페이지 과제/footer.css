@@ -1,0 +1,9 @@
+#finally {
+    height: 400px;
+    background-color: white;
+}
+#footer-photo {
+    float: right;
+    height: 200px;
+    margin-right: 80px;
+}

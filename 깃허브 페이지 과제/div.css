@@ -1,0 +1,53 @@
+#main {
+    height: 25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
+
+#textbox {
+    color: white;
+    width: 400px;
+    height: 300px;
+}
+#large {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+#login {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+#right-main {
+    color: black;
+}
+.idbox {
+    width: 375px;
+    height: 2.5rem;
+    background-color: skyblue;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+#password-warning {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+#inner-login {
+    margin-left: 10px;
+}
+#button {
+    margin-top: 1rem;
+    color: white;
+    width: 375px;
+    height: 4rem;
+    background-color: green;
+    border-radius: 5px;
+}
+#announce {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}

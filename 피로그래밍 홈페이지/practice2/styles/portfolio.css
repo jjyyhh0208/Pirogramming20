@@ -1,0 +1,130 @@
+#main {
+    padding: 90px var(--offset) 50px;
+}
+#th {
+    font-size: 2.2rem;
+}
+#section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.projectbox {
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #333;
+    border-radius: 10px;
+    gap: 16px;
+    display: flex;
+    position: relative;
+}
+.projectbox:hover .projectimg img{
+    transform: scale(1.1);
+}
+.projectbox:hover {
+    top: -2px;
+}
+.projectbox:hover .project-more > div:nth-child(1), .projectbox:hover .project-more > div:nth-child(3) {
+    width: 50%;
+}
+
+.projectimg {
+    background-color: white;
+    width: 150px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+.logo {
+    width: 100%;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+.project-content {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-name {
+    width: 320px;
+    height: 22px;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+.project-info {
+    color: #c6c6c6;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.makers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+.makers li {
+    background-color: rgba(236, 236, 236, 0.466);
+    padding: 6px 8px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    color: black;
+}
+.makers li.leader {
+    background-color: #2188b6;
+    color: white;
+}
+.project-more {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.project-more div {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(236, 236, 236, 0.466);
+    transition: 0.3s;
+}
+.project-more > div:nth-child(1) {
+    margin-right: auto;
+}
+.project-more > div:nth-child(3) {
+    margin-left: auto;
+}
+@media screen and (max-width: 650px) {
+    .projectbox {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 0;
+    }
+    .project-name {
+        margin-bottom: 10px;
+    }
+    .projectimg {
+        width: min(75%, 250px);
+        height: 160px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .project-info {
+        text-align: center;
+    }
+    .makers {
+        display: grid;
+        grid-template-columns: repeat(3, 60px);
+        justify-content: center;
+    }
+}

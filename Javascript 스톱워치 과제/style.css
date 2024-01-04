@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+#actionBox {
+  width: 250px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+  margin-bottom: 25px;
+}
+#actionBox > #timeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#timeBox > #sec::after {
+  content: ":";
+}
+
+#actionBox > #btnBox {
+  margin-top: 10px;
+}
+#startBtn,
+#stopBtn,
+#resetBtn {
+  box-shadow: 2px 2px 2px gray;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#startBtn:hover,
+#stopBtn:hover,
+#resetBtn:hover {
+  background-color: aqua;
+}
+
+#recordBox {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+#recordBox > #recordHeader {
+  height: 20px;
+  font-size: 10px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  padding: 0 20px;
+}
+#recordBox > .records {
+  height: 20px;
+  font-size: 10px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 20px;
+  transition: 0.3s;
+}
+#recordBox > .records:hover {
+  background-color: lightblue;
+}
+
+#recordHeader > .fa-trash {
+  cursor: pointer;
+}
+
+.fa-circle {
+  cursor: pointer;
+}
+
+.records > #recordTime > #recordSec::after {
+  content: ":";
+}

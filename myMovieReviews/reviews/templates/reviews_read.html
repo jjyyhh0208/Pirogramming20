@@ -1,0 +1,23 @@
+<h2><a href="/">my Movie review</a></h2>
+<h2>{{review.title}}</h2>
+
+<p>
+  Created Date: {{review.createdDate}}
+  <br />
+  Genre: {{review.genre}}
+  <br />
+  Rank: {{review.rank}}
+  <br />
+  Running Time: {{review.running_time}}
+  <br />
+  Content: {{review.content}}
+  <br />
+  Director: {{review.director}}
+  <br />
+  Actors: {{review.actors}}
+</p>
+<form action="/delete/{{review.id}}" method="post">
+  {% csrf_token %}
+  <input type="submit" value="삭제" />
+</form>
+<a href="/update/{{review.id}}">수정</a>

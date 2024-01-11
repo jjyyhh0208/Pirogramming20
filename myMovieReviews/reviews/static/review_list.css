@@ -1,0 +1,54 @@
+body {
+  padding: 10px;
+}
+#header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid gray;
+}
+
+#header a {
+  text-decoration: none;
+  color: black;
+}
+
+#header a:visited {
+  text-decoration: none;
+}
+
+#header > #siteName {
+  font-size: 35px;
+}
+
+#siteName a .red {
+  color: red !important;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+#movieInfo {
+  display: flex;
+  justify-content: center;
+}
+#movieInfo img {
+  width: 20px;
+  height: 35px;
+}
+
+#content > .movieInfo {
+  background-color: #f2f3f4;
+  font-size: 10px;
+  width: 250px;
+}
+.movieInfo li {
+  padding: 5px;
+  font-size: 10px;
+}

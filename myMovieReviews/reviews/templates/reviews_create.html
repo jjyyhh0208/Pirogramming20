@@ -1,0 +1,19 @@
+<form action="/create" method="post">
+  {% csrf_token %}
+  <input name="title" placeholder="제목" /> <br />
+  <input name="createdDate" placeholder="개봉 날짜" /> <br />
+  <input name="genre" placeholder="장르" /> <br />
+  <input name="rank" placeholder="평점" /> <br />
+  <input name="running_time" placeholder="상영 시간" /> <br />
+  <input
+    name="content"
+    placeholder="내용"
+    style="width: 200px; height: 100px"
+  />
+  <br />
+  <input name="director" placeholder="감독" /> <br />
+  <input name="actors" placeholder="배우" /> <br />
+  <div>
+    <input type="submit" value="저장" />
+  </div>
+</form>

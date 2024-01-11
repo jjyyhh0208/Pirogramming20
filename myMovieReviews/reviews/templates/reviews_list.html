@@ -1,0 +1,15 @@
+<h2>my Movie review</h2>
+
+{% for review in reviews %}
+<p>
+  <a href="/{{review.id}}">{{review.title}}</a>
+  <br />
+  개봉년도 {{review.createdDate|date:'Y-m-d'}}
+  <br />
+  장르 {{review.genre}}
+  <br />
+  별점 {{review.rank}}
+</p>
+{% endfor %}
+
+<a href="/create">리뷰 작성</a>

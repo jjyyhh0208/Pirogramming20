@@ -4,7 +4,7 @@ from datetime import datetime, time
 
 # Create your views here.
 def reviews_list(request):
-    reviews = Reviews.objects.all()
+    reviews = Reviews.objects.order_by('createdDate')
     context = {
         "reviews" : reviews
     }

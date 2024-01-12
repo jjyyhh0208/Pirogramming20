@@ -2,13 +2,13 @@
 <h2>{{review.title}}</h2>
 
 <p>
-  Created Date: {{review.createdDate}}
+  Created Date: {{review.createdDate|date:'Y-m-d'}}
   <br />
   Genre: {{review.genre}}
   <br />
   Rank: {{review.rank}}
   <br />
-  Running Time: {{review.running_time}}
+  Running Time: {{review.running_time|time:'H:i:s'}}
   <br />
   Content: {{review.content}}
   <br />

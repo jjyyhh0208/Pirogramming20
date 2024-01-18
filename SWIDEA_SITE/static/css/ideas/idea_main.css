@@ -1,0 +1,66 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: bold;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+header > div > a {
+  text-decoration: none;
+  color: white;
+}
+
+header > div > a > b {
+  color: yellow !important;
+}
+
+.ideaContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ideaBox > #ideaInterest {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ideaBox > #ideaInterest > a {
+  text-decoration: none;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  color: gray;
+}
+
+.ideaBox > .title {
+  color: yellowgreen;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+img {
+  width: 360px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.ideaDetail {
+  width: 70vw;
+  margin: auto;
+  background-color: beige;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

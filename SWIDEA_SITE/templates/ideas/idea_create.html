@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My SW Idea Manage</title>
+  </head>
+  <body>
+    <a href="{% url 'ideas:main' %}">My SW Idea Manage</a>
+    <br />
+    <div>
+      <p>Idea Register</p>
+      <p>아이디어 등록 페이지입니다. 당신의 아이디어를 잊지 말고 기록하세요!</p>
+      <br />
+      <form
+        action="{% url 'ideas:create' %}"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        {%csrf_token%} {{forms.as_p}}
+        <button type="submit">등록하기</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>개발툴 디테일</title>
+  </head>
+  <body>
+    <a href="{% url 'ideas:main' %}">My SW Idea Manage</a>
+    <div>DevTool Detail</div>
+
+    <p>
+      개발툴 세부내용 페이지입니다. 자신이 다룰 수 있는 개발툴에 대한 상세내용을
+      확인해 보아요.
+    </p>
+    <br />
+    <div class="toolDetailBox">
+      <p>{{devtool.name}}</p>
+      <br />
+      <p>{{ devtool.kind }}</p>
+      <br />
+      <p>{{ devtool.content }}</p>
+    </div>
+    <form action="{% url 'devtools:delete' pk %}" method="post">
+      {% csrf_token %}
+      <input type="submit" class="deleteBtn" value="삭제" />
+      <a href="{% url 'devtools:list' %}" class="listBtn">목록</a>
+      <a href="{% url 'devtools:update' pk %}" class="listBtn">수정</a>
+    </form>
+    <br />
+    <p>>만들 수 있는 SW 목록</p>
+    {% for rel_idea in related_ideas %}
+    <a href="{% url 'ideas:detail' rel_idea.pk %}" class="btn btn-success">
+      {{rel_idea.title}}
+    </a>
+    {% endfor %}
+  </body>
+</html>

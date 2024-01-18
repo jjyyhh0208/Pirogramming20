@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>개발툴 수정</title>
+  </head>
+  <body>
+    <a href="{% url 'ideas:main' %}">My SW Idea Manage</a>
+
+    <div>DevTool Detail Update</div>
+    <p>
+      개발툴 세부내용 수정 페이지입니다. 개발툴에 대해 수정사항이 있으면
+      고쳐보아요.
+    </p>
+    <br />
+    <form action="{% url 'devtools:update' pk %}" , method="post">
+      {% csrf_token %}{{forms.as_p}}
+      <button type="submit">수정완료</button>
+    </form>
+  </body>
+</html>

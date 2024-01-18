@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idea Details</title>
+    <link rel="stylesheet" href="{% static 'css/ideas/idea_main.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div id="left">
+        <a href="{% url 'ideas:main' %}">My <b>SW Idea</b> Manage</a>
+      </div>
+      <div id="right">
+        <a href="{% url 'ideas:create' %}">아이디어 등록하기</a>
+
+        <a href="{% url 'devtools:list' %}">개발툴 관리</a>
+
+        <a href="{% url 'devtools:create' %}">개발툴 등록</a>
+      </div>
+    </header>
+    <hr />
+    <div class="ideaDetail">
+      <div class="introduce">
+        <p>Idea Detail</p>
+        <p>
+          아이디어 세부내용 페이지 입니다. 당신이 구현하려 한 아이디어들을
+          자세히 살펴보세요.
+        </p>
+      </div>
+      <br />
+      <div id="detailBox">
+        {% if idea.photo %}
+        <img src="{{idea.photo.url}}" alt="photo" />
+        {% else %}
+        <img src="{% static 'image/no_img.png' %}" alt="photo" />
+        {% endif %}
+        <div>
+          <p>{{ idea.title }}</p>
+          <p>1. 아이디어 관심도<br />{{ idea.interest }}</p>
+          <p>
+            2. 예상 개발 툴<br /><a
+              href="{% url 'devtools:detail' idea.tool.id %}"
+              >{{ idea.tool }}</a
+            >
+          </p>
+          <p>3. 아이디어 설명<br />{{ idea.content }}</p>
+        </div>
+        <div>
+          <form action="{% url 'ideas:delete' pk %}" method="post">
+            {% csrf_token %}
+            <input type="submit" class="deleteBtn" value="삭제" />
+            <a href="{% url 'ideas:main' %}" class="listBtn">목록</a>
+            <a href="{% url 'ideas:update' pk %}" class="listBtn">수정</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

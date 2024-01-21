@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %} {% if user.is_authenticated %}
+<form
+  action="{% url 'posts:create' %}"
+  method="post"
+  enctype="multipart/form-data"
+>
+  {% csrf_token %} {{form.as_p}}
+  <button type="submit">작성 완료</button>
+</form>
+{% else %} 로그인부터 해주세요 {% endif %} {% endblock %}

@@ -1,0 +1,9 @@
+{% block content %}
+
+<div class="btn">
+  <form action="{% url 'users:update' %}" method="post">
+    {% csrf_token %}{{form.as_p}}
+    <button type="submit">수정 완료</button>
+  </form>
+</div>
+{% endblock %}

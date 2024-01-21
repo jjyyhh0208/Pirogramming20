@@ -1,0 +1,6 @@
+{% extends 'base.html' %} {% block content %}
+<a href="{% url 'posts:create' %}">게시물 작성</a>
+{% for post in posts %}
+<p>{{ post.title }}</p>
+<p>{{ post.created_date }}</p>
+{% endfor %} {% endblock %}

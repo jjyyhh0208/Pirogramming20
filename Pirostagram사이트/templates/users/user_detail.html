@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<p>아이디: {{ user.username }}</p>
+<p>이름: {{ user.name }}</p>
+<p>소개: {{ user.intro }}</p>
+
+<div class="btn">
+  <a href="{% url 'users:update' %}">회원 정보 수정</a>
+  <form action="{% url 'users:delete' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">회원 탈퇴</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,6 +1,9 @@
 {% extends 'base.html' %} {% block content %}
 <a href="{% url 'posts:create' %}">게시물 작성</a>
 {% for post in posts %}
-<p>{{ post.title }}</p>
-<p>{{ post.created_date }}</p>
+<div class="postList">
+  <p><a href="{% url 'posts:detail' post.pk %}">{{post.title}}</a></p>
+  <p>{{ post.writer }}</p>
+  <p>{{ post.created_date }}</p>
+</div>
 {% endfor %} {% endblock %}

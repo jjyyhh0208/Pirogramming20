@@ -6,6 +6,6 @@ class NewPost(forms.ModelForm):
         model = Post
         fields = ('__all__')
 
-    def __init__(self, *args, **kwargs):
-        super(NewPost, self).__init__(*args, **kwargs)
-        self.fields['writer'].disabled = True
+    # def __init__(self, *args, **kwargs):
+    #     super(NewPost, self).__init__(*args, **kwargs)
+    #     self.fields['writer'].disabled = True

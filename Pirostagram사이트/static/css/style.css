@@ -1,0 +1,315 @@
+header {
+  margin-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bagel Fat One", system-ui;
+  align-items: center;
+}
+body {
+  background: linear-gradient(to right, #000000, #434343, #2c3e50, #000000);
+  color: white;
+  font-family: "Bagel Fat One", system-ui;
+}
+header > #leftHeader a {
+  text-decoration: none;
+  color: orange;
+  font-size: 50px;
+}
+
+header > #rightHeader {
+  display: flex;
+  gap: 20px;
+}
+
+header > #rightHeader a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#addPost {
+  display: flex;
+  justify-content: right;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+#addPost > a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  font-family: "Bagel Fat One", system-ui;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#loginForm {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginForm > form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: "Bagel Fat One", system-ui;
+  font-size: 20px;
+  color: white;
+  border: 2px solid white;
+  padding: 50px 10px;
+  border-radius: 20px;
+}
+
+#loginForm > form > button {
+  color: white;
+  font-family: "Bagel Fat One", system-ui;
+  background-color: purple;
+}
+
+#postCreateForm {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#postCreateForm > form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: "Bagel Fat One", system-ui;
+  color: white;
+  border: 2px solid white;
+  padding: 50px 10px;
+  border-radius: 20px;
+}
+
+#postCreateForm > form > button {
+  color: white;
+  font-family: "Bagel Fat One", system-ui;
+  background-color: purple;
+}
+
+#warning {
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#warning > p {
+  border: 2px solid white;
+  padding: 50px 10px;
+  border-radius: 20px;
+  background-color: red;
+  font-family: "Bagel Fat One", system-ui;
+  font-size: 20px;
+}
+
+#detailBox {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#detailBorder > #infoBtn {
+  display: flex;
+  gap: 20px;
+}
+
+#detailBorder > #infoBtn > a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid purple;
+  border-radius: 3px;
+  background-color: purple;
+}
+
+#detailBorder > #infoBtn button {
+  background-color: purple;
+  color: white;
+  font-family: "Bagel Fat One", system-ui;
+}
+
+#detailBorder {
+  border: 2px solid white;
+  padding: 50px 10px;
+  border-radius: 20px;
+}
+
+#fixUserBox {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#fixBorder {
+  border: 2px solid white;
+  padding: 60px 10px;
+  border-radius: 20px;
+}
+
+#fixBorder button {
+  background-color: purple;
+  color: white;
+  font-family: "Bagel Fat One", system-ui;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.post > #postBorder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  padding: 60px 10px;
+  border-radius: 20px;
+}
+
+#commentBox a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid purple;
+  border-radius: 3px;
+  background-color: purple;
+}
+
+#commentBox .btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#commentBox .btn button {
+  background-color: purple;
+  color: white;
+  font-family: "Bagel Fat One", system-ui;
+}
+div[id^="comment-"] {
+  display: flex;
+  gap: 20px;
+}
+
+div[id^="comment-"] button {
+  background-color: purple;
+  color: white;
+  font-family: "Bagel Fat One", system-ui;
+}
+#inputDiv button {
+  background-color: purple;
+  color: white;
+  font-family: "Bagel Fat One", system-ui;
+}
+
+#postUpdateBox {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#postUpdateBorder {
+  border: 2px solid white;
+  padding: 60px 10px;
+  border-radius: 20px;
+}
+
+#postUpdateBorder button {
+  background-color: purple;
+  color: white;
+  font-family: "Bagel Fat One", system-ui;
+}
+#signupBox {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#signupBorder {
+  border: 2px solid white;
+  padding: 60px 10px;
+  border-radius: 20px;
+}
+
+#signupBorder button {
+  background-color: purple;
+  color: white;
+  font-family: "Bagel Fat One", system-ui;
+}
+
+.postContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 90px;
+}
+
+#postItem {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#postItem a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.image {
+  width: 360px;
+  height: 250px;
+  border-radius: 20px;
+  border: 2px solid yellow;
+}
+.no-posts {
+  text-align: center;
+  padding: 20px;
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+.no-posts p {
+  font-size: 100px;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+#firstAlert {
+  display: flex;
+  justify-content: center;
+}
